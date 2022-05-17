@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+}
+.box-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*- Orange: hsl(25, 97%, 53%)*/
+
+/*### Neutral*/
+
+/*- White: hsl(0, 0%, 100%)*/
+/*- Light Grey: hsl(217, 12%, 63%)*/
+/*- Medium Grey: hsl(216, 12%, 54%)*/
+/*- Dark Blue: hsl(213, 19%, 18%)*/
+/*- Very Dark Blue: hsl(216, 12%, 8%)*/
+
+.box{
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px hsl(216, 12%, 8%) ;
+    border-bottom: 0.5px solid #00000040;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    position: relative;
+    background: #1f262f;
+}
+.title p{
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+}
+.star{
+    width: 50px;
+    height: 50px;
+    background: hsl(213, 19%, 18%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.star img{
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+}
+.rate{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px  ;
+}
+.rate span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: hsl(213, 19%, 18%);
+    color: hsl(217, 12%, 63%);
+
+}
+.button{
+    width: 100%;
+    background:  hsl(25, 97%, 53%);
+    border-radius: 20px;
+}
+.btn:focus{
+    outline: none !important;
+    box-shadow: none;
+}
+.delay{
+    animation-delay: .5s;
+}
